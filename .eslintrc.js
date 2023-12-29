@@ -3,16 +3,16 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
-    sourceType: "module"
+    sourceType: "module",
   },
   env: {
-    node: true
+    node: true,
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:vue/vue3-recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   plugins: ["prettier", "@typescript-eslint"],
   rules: {
@@ -23,25 +23,25 @@ module.exports = {
       "error",
       {
         ignoreWhenEmpty: true,
-        allowEmptyLines: false
-      }
+        allowEmptyLines: false,
+      },
     ],
-    "prettier/prettier": "warn"
+    "prettier/prettier": "warn",
   },
   overrides: [
     {
-      files: ['**/*.vue'],
+      files: ["**/*.vue"],
       rules: {
-        '@typescript-eslint/indent': 'off',
-        'indent': 'off',
-      }
+        "@typescript-eslint/indent": "off",
+        indent: "off",
+      },
     },
     {
-      files: ['**/*.ts', '**/*.vue'],
+      files: ["**/*.ts", "**/*.vue"],
       rules: {
-        'default-case': 'off'
-      }
-    }
+        "default-case": "off",
+      },
+    },
   ],
   globals: {
     vi: true,
@@ -52,6 +52,6 @@ module.exports = {
     afterEach: true,
     test: true,
     afterAll: true,
-    beforeAll: true
-  }
-}
+    beforeAll: true,
+  },
+};
