@@ -9,12 +9,12 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:@typescript-eslint/recommended",
-    "eslint:recommended",
     "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
-  plugins: ["prettier", "@typescript-eslint"],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
     "no-unused-vars": "off", // overridden by @typescript-eslint plugin
     "no-undef": "off", // overridden by @typescript-eslint plugin
