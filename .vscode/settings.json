@@ -5,5 +5,10 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["pollyex"]
+  "cSpell.words": [
+    "pollyex"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
