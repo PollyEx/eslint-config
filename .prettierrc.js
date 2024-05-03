@@ -3,7 +3,7 @@ module.exports = {
   "semi": false,
   "singleQuote": true,
   "quoteProps": "as-needed",
-  "printWidth": 80,
+  "printWidth": 160,
   "singleAttributePerLine": true,
   "plugins": ["@ianvs/prettier-plugin-sort-imports"],
   "importOrder": [
