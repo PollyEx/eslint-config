@@ -14,6 +14,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
   ],
   plugins: ['@typescript-eslint'],
   rules: {
@@ -28,6 +30,9 @@ module.exports = {
       },
     ],
     'prettier/prettier': 'warn',
+    'import/no-useless-path-segments': ['error', {
+      noUselessIndex: true,
+    }],
   },
   overrides: [
     {
@@ -55,4 +60,14 @@ module.exports = {
     afterAll: true,
     beforeAll: true,
   },
+  settings: {
+    'import/extensions': [
+      '.js',
+      '.ts'
+    ],
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    }
+  }
 }
